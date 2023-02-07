@@ -23,13 +23,13 @@
 			
 			
 while(i<11){
-	vErgebnis = a[i]*input[i];
+	vSumme = a[i]*input[i];
 	vErgebnis = vErgebnis + vSumme; 
 	i++;
 }
 
 
-vPrüfziffer = 10-(vSumme%10);
+vPrüfziffer = 10-(vErgebnis%10);
 if(vPrüfziffer == 10){
 	vPrüfziffer=0;
 }
@@ -50,7 +50,7 @@ document.getElementById("idOutput").innerHTML= vAusgabe;
 
 	<body>
 		<h1>Prüfziffer Berchenen / validieren</h1>
-		<input id="idInput" type="text" maxlength="12" size="10" value ="400999301020">
+		<input id="idInput" type="text" maxlength="13" size="10" value ="400999301020">
 		<button onclick="fFunction();">Berechne Prüfziffer!</button><br><br>
 		<div id="idOutput"></div>
 	
